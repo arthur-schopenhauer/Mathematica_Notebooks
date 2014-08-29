@@ -1,0 +1,2314 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     63854,       2304]
+NotebookOptionsPosition[     58040,       2149]
+NotebookOutlinePosition[     58372,       2164]
+CellTagsIndexPosition[     58329,       2161]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"System`Dump`AutoLoad", "[", 
+   RowBox[{
+    RowBox[{"Hold", "[", "CountryData", "]"}], ",", 
+    RowBox[{"Hold", "[", "CountryData", "]"}], ",", 
+    "\"\<DataPaclets`CountryData`\>\""}], "]"}], "//", 
+  "TracePrint"}]], "Input",
+ CellChangeTimes->{{3.618326415651589*^9, 3.6183264156532097`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{" ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"System`Dump`AutoLoad", "[", 
+     RowBox[{
+      RowBox[{"Hold", "[", "CountryData", "]"}], ",", 
+      RowBox[{"Hold", "[", "CountryData", "]"}], 
+      ",", "\<\"DataPaclets`CountryData`\"\>"}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[1], 
+   HoldForm[
+    System`Dump`AutoLoad[
+     Hold[CountryData], 
+     Hold[CountryData], "DataPaclets`CountryData`"]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185523443`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox["System`Dump`AutoLoad",
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[System`Dump`AutoLoad]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185534267`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"Hold", "[", "CountryData", "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[
+    Hold[CountryData]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185542383`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"   ", "\[InvisibleSpace]", 
+   TagBox["Hold",
+    HoldForm]}],
+  SequenceForm[
+   Indent[3], 
+   HoldForm[Hold]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418554943*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"Hold", "[", "CountryData", "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[
+    Hold[CountryData]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418555622*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"   ", "\[InvisibleSpace]", 
+   TagBox["Hold",
+    HoldForm]}],
+  SequenceForm[
+   Indent[3], 
+   HoldForm[Hold]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418556325*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox["\<\"DataPaclets`CountryData`\"\>",
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm["DataPaclets`CountryData`"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418556945*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{" ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"AbortProtect", "[", 
+     RowBox[{"Module", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "System`Dump`protected$", ",", "System`Dump`synt$", ",", 
+         "System`Dump`binary$"}], "}"}], ",", 
+       RowBox[{
+        RowBox[{"System`Dump`binary$", "=", 
+         RowBox[{"System`Private`$SystemFileDir", "<>", 
+          RowBox[{
+          "System`Dump`fixfile", "[", "\<\"DataPaclets`CountryData`\"\>", 
+           "]"}], "<>", "\<\"x\"\>"}]}], ";", 
+        RowBox[{"If", "[", 
+         RowBox[{"System`Private`$PrintLoad", ",", 
+          RowBox[{
+           RowBox[{"Print", "[", 
+            RowBox[{"Hold", "[", "CountryData", "]"}], "]"}], ";", 
+           RowBox[{"Print", "[", 
+            RowBox[{"\<\"Loading \"\>", ",", "System`Dump`binary$"}], 
+            "]"}]}]}], "]"}], ";", 
+        RowBox[{"System`Dump`synt$", "=", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Head", "[", 
+             StyleBox[
+              RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}], "=!=",
+             "$Off"}], ",", 
+           RowBox[{
+            RowBox[{"Off", "[", 
+             StyleBox[
+              RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}], ";", 
+            "True"}], ",", "False"}], "]"}]}], ";", 
+        RowBox[{"System`Dump`protected$", "=", 
+         RowBox[{"Unprotect", "[", "CountryData", "]"}]}], ";", 
+        RowBox[{"ReleaseHold", "[", 
+         RowBox[{"Unset", "/@", 
+          RowBox[{"Hold", "[", "CountryData", "]"}]}], "]"}], ";", 
+        RowBox[{"Protect", "[", 
+         RowBox[{"Evaluate", "[", "System`Dump`protected$", "]"}], "]"}], ";", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"System`Private`$AutoLoad", "===", "False"}], ",", 
+          RowBox[{"Message", "[", 
+           RowBox[{
+            StyleBox[
+             RowBox[{"General", "::", "autoload"}], "MessageName"], ",", 
+            "CountryData", ",", "\<\"DataPaclets`CountryData`\"\>"}], "]"}], 
+          ",", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"DumpGet", "[", "System`Dump`binary$", "]"}], "=!=", 
+             "Null"}], ",", 
+            RowBox[{"Message", "[", 
+             RowBox[{
+              StyleBox[
+               RowBox[{"General", "::", "sysfile"}], "MessageName"], 
+              ",", "\<\"DataPaclets`CountryData`\"\>", ",", "CountryData"}], 
+             "]"}]}], "]"}]}], "]"}], ";", 
+        RowBox[{"If", "[", 
+         RowBox[{"System`Dump`synt$", ",", 
+          RowBox[{"On", "[", 
+           StyleBox[
+            RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}]}], 
+         "]"}], ";", "CountryData"}]}], "]"}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[1], 
+   HoldForm[
+    AbortProtect[
+     Module[{System`Dump`protected$, System`Dump`synt$, System`Dump`binary$}, 
+      System`Dump`binary$ = StringJoin[System`Private`$SystemFileDir, 
+         System`Dump`fixfile["DataPaclets`CountryData`"], "x"]; 
+      If[System`Private`$PrintLoad, Print[
+          Hold[CountryData]]; Print["Loading ", System`Dump`binary$]]; 
+      System`Dump`synt$ = If[Head[
+           MessageName[Syntax, "bktwrn"]] =!= $Off, Off[
+           MessageName[Syntax, "bktwrn"]]; True, False]; 
+      System`Dump`protected$ = Unprotect[CountryData]; ReleaseHold[
+        Map[Unset, 
+         Hold[CountryData]]]; Protect[
+        Evaluate[System`Dump`protected$]]; 
+      If[System`Private`$AutoLoad === False, 
+        Message[
+         MessageName[General, "autoload"], CountryData, 
+         "DataPaclets`CountryData`"], 
+        If[DumpGet[System`Dump`binary$] =!= Null, 
+         Message[
+          MessageName[General, "sysfile"], "DataPaclets`CountryData`", 
+          CountryData]]]; If[System`Dump`synt$, 
+        On[
+         MessageName[Syntax, "bktwrn"]]]; CountryData]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418559065*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox["AbortProtect",
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[AbortProtect]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185628967`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "System`Dump`protected$", ",", "System`Dump`synt$", ",", 
+        "System`Dump`binary$"}], "}"}], ",", 
+      RowBox[{
+       RowBox[{"System`Dump`binary$", "=", 
+        RowBox[{"System`Private`$SystemFileDir", "<>", 
+         RowBox[{
+         "System`Dump`fixfile", "[", "\<\"DataPaclets`CountryData`\"\>", 
+          "]"}], "<>", "\<\"x\"\>"}]}], ";", 
+       RowBox[{"If", "[", 
+        RowBox[{"System`Private`$PrintLoad", ",", 
+         RowBox[{
+          RowBox[{"Print", "[", 
+           RowBox[{"Hold", "[", "CountryData", "]"}], "]"}], ";", 
+          RowBox[{"Print", "[", 
+           RowBox[{"\<\"Loading \"\>", ",", "System`Dump`binary$"}], 
+           "]"}]}]}], "]"}], ";", 
+       RowBox[{"System`Dump`synt$", "=", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Head", "[", 
+            StyleBox[
+             RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}], "=!=",
+            "$Off"}], ",", 
+          RowBox[{
+           RowBox[{"Off", "[", 
+            StyleBox[
+             RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}], ";", 
+           "True"}], ",", "False"}], "]"}]}], ";", 
+       RowBox[{"System`Dump`protected$", "=", 
+        RowBox[{"Unprotect", "[", "CountryData", "]"}]}], ";", 
+       RowBox[{"ReleaseHold", "[", 
+        RowBox[{"Unset", "/@", 
+         RowBox[{"Hold", "[", "CountryData", "]"}]}], "]"}], ";", 
+       RowBox[{"Protect", "[", 
+        RowBox[{"Evaluate", "[", "System`Dump`protected$", "]"}], "]"}], ";", 
+       
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"System`Private`$AutoLoad", "===", "False"}], ",", 
+         RowBox[{"Message", "[", 
+          RowBox[{
+           StyleBox[
+            RowBox[{"General", "::", "autoload"}], "MessageName"], ",", 
+           "CountryData", ",", "\<\"DataPaclets`CountryData`\"\>"}], "]"}], 
+         ",", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"DumpGet", "[", "System`Dump`binary$", "]"}], "=!=", 
+            "Null"}], ",", 
+           RowBox[{"Message", "[", 
+            RowBox[{
+             StyleBox[
+              RowBox[{"General", "::", "sysfile"}], "MessageName"], 
+             ",", "\<\"DataPaclets`CountryData`\"\>", ",", "CountryData"}], 
+            "]"}]}], "]"}]}], "]"}], ";", 
+       RowBox[{"If", "[", 
+        RowBox[{"System`Dump`synt$", ",", 
+         RowBox[{"On", "[", 
+          StyleBox[
+           RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}]}], "]"}],
+        ";", "CountryData"}]}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[
+    Module[{System`Dump`protected$, System`Dump`synt$, System`Dump`binary$}, 
+     System`Dump`binary$ = StringJoin[System`Private`$SystemFileDir, 
+        System`Dump`fixfile["DataPaclets`CountryData`"], "x"]; 
+     If[System`Private`$PrintLoad, Print[
+         Hold[CountryData]]; Print["Loading ", System`Dump`binary$]]; 
+     System`Dump`synt$ = If[Head[
+          MessageName[Syntax, "bktwrn"]] =!= $Off, Off[
+          MessageName[Syntax, "bktwrn"]]; True, False]; 
+     System`Dump`protected$ = Unprotect[CountryData]; ReleaseHold[
+       Map[Unset, 
+        Hold[CountryData]]]; Protect[
+       Evaluate[System`Dump`protected$]]; 
+     If[System`Private`$AutoLoad === False, 
+       Message[
+        MessageName[General, "autoload"], CountryData, 
+        "DataPaclets`CountryData`"], 
+       If[DumpGet[System`Dump`binary$] =!= Null, 
+        Message[
+         MessageName[General, "sysfile"], "DataPaclets`CountryData`", 
+         CountryData]]]; If[System`Dump`synt$, 
+       On[
+        MessageName[Syntax, "bktwrn"]]]; CountryData]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418564911*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"   ", "\[InvisibleSpace]", 
+   TagBox["Module",
+    HoldForm]}],
+  SequenceForm[
+   Indent[3], 
+   HoldForm[Module]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185662193`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"   ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{
+     RowBox[{"System`Dump`binary$2886", "=", 
+      RowBox[{"System`Private`$SystemFileDir", "<>", 
+       RowBox[{
+       "System`Dump`fixfile", "[", "\<\"DataPaclets`CountryData`\"\>", "]"}], 
+       "<>", "\<\"x\"\>"}]}], ";", 
+     RowBox[{"If", "[", 
+      RowBox[{"System`Private`$PrintLoad", ",", 
+       RowBox[{
+        RowBox[{"Print", "[", 
+         RowBox[{"Hold", "[", "CountryData", "]"}], "]"}], ";", 
+        RowBox[{"Print", "[", 
+         RowBox[{"\<\"Loading \"\>", ",", "System`Dump`binary$2886"}], 
+         "]"}]}]}], "]"}], ";", 
+     RowBox[{"System`Dump`synt$2886", "=", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Head", "[", 
+          StyleBox[
+           RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}], "=!=", 
+         "$Off"}], ",", 
+        RowBox[{
+         RowBox[{"Off", "[", 
+          StyleBox[
+           RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}], ";", 
+         "True"}], ",", "False"}], "]"}]}], ";", 
+     RowBox[{"System`Dump`protected$2886", "=", 
+      RowBox[{"Unprotect", "[", "CountryData", "]"}]}], ";", 
+     RowBox[{"ReleaseHold", "[", 
+      RowBox[{"Unset", "/@", 
+       RowBox[{"Hold", "[", "CountryData", "]"}]}], "]"}], ";", 
+     RowBox[{"Protect", "[", 
+      RowBox[{"Evaluate", "[", "System`Dump`protected$2886", "]"}], "]"}], 
+     ";", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"System`Private`$AutoLoad", "===", "False"}], ",", 
+       RowBox[{"Message", "[", 
+        RowBox[{
+         StyleBox[
+          RowBox[{"General", "::", "autoload"}], "MessageName"], ",", 
+         "CountryData", ",", "\<\"DataPaclets`CountryData`\"\>"}], "]"}], ",", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"DumpGet", "[", "System`Dump`binary$2886", "]"}], "=!=", 
+          "Null"}], ",", 
+         RowBox[{"Message", "[", 
+          RowBox[{
+           StyleBox[
+            RowBox[{"General", "::", "sysfile"}], "MessageName"], 
+           ",", "\<\"DataPaclets`CountryData`\"\>", ",", "CountryData"}], 
+          "]"}]}], "]"}]}], "]"}], ";", 
+     RowBox[{"If", "[", 
+      RowBox[{"System`Dump`synt$2886", ",", 
+       RowBox[{"On", "[", 
+        StyleBox[
+         RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}]}], "]"}], 
+     ";", "CountryData"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[3], 
+   HoldForm[
+   System`Dump`binary$2886 = StringJoin[System`Private`$SystemFileDir, 
+       System`Dump`fixfile["DataPaclets`CountryData`"], "x"]; 
+    If[System`Private`$PrintLoad, Print[
+        Hold[CountryData]]; Print["Loading ", System`Dump`binary$2886]]; 
+    System`Dump`synt$2886 = If[Head[
+         MessageName[Syntax, "bktwrn"]] =!= $Off, Off[
+         MessageName[Syntax, "bktwrn"]]; True, False]; 
+    System`Dump`protected$2886 = Unprotect[CountryData]; ReleaseHold[
+      Map[Unset, 
+       Hold[CountryData]]]; Protect[
+      Evaluate[System`Dump`protected$2886]]; 
+    If[System`Private`$AutoLoad === False, 
+      Message[
+       MessageName[General, "autoload"], CountryData, 
+       "DataPaclets`CountryData`"], 
+      If[DumpGet[System`Dump`binary$2886] =!= Null, 
+       Message[
+        MessageName[General, "sysfile"], "DataPaclets`CountryData`", 
+        CountryData]]]; If[System`Dump`synt$2886, 
+      On[
+       MessageName[Syntax, "bktwrn"]]]; CountryData]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418567258*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox["CompoundExpression",
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[CompoundExpression]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185683002`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"System`Dump`binary$2886", "=", 
+     RowBox[{"System`Private`$SystemFileDir", "<>", 
+      RowBox[{
+      "System`Dump`fixfile", "[", "\<\"DataPaclets`CountryData`\"\>", "]"}], 
+      "<>", "\<\"x\"\>"}]}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[
+   System`Dump`binary$2886 = StringJoin[System`Private`$SystemFileDir, 
+      System`Dump`fixfile["DataPaclets`CountryData`"], "x"]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418568798*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["Set",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[Set]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418569306*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"System`Private`$SystemFileDir", "<>", 
+     RowBox[{
+     "System`Dump`fixfile", "[", "\<\"DataPaclets`CountryData`\"\>", "]"}], 
+     "<>", "\<\"x\"\>"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[
+    StringJoin[System`Private`$SystemFileDir, 
+     System`Dump`fixfile["DataPaclets`CountryData`"], "x"]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418569788*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["StringJoin",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[StringJoin]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418570266*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["System`Private`$SystemFileDir",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[System`Private`$SystemFileDir]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418570714*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["\<\"/usr/local/Wolfram/Mathematica/10.0/SystemFiles/Kernel/\
+SystemResources/Linux-x86-64/\"\>",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[
+   "/usr/local/Wolfram/Mathematica/10.0/SystemFiles/Kernel/SystemResources/\
+Linux-x86-64/"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418571094*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{
+    "System`Dump`fixfile", "[", "\<\"DataPaclets`CountryData`\"\>", "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[
+    System`Dump`fixfile["DataPaclets`CountryData`"]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185718393`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox["System`Dump`fixfile",
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm[System`Dump`fixfile]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418572303*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox["\<\"DataPaclets`CountryData`\"\>",
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm["DataPaclets`CountryData`"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418572709*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"System`Dump`file", "=", 
+        RowBox[{
+        "ContextToFileName", "[", "\<\"DataPaclets`CountryData`\"\>", "]"}]}],
+        "}"}], ",", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"StringTake", "[", 
+          RowBox[{"System`Dump`file", ",", "1"}], "]"}], "===", 
+         "$PathnameSeparator"}], ",", 
+        RowBox[{"StringDrop", "[", 
+         RowBox[{"System`Dump`file", ",", "1"}], "]"}], ",", 
+        "System`Dump`file"}], "]"}]}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[
+    With[{System`Dump`file = ContextToFileName["DataPaclets`CountryData`"]}, 
+     If[StringTake[System`Dump`file, 1] === $PathnameSeparator, 
+      StringDrop[System`Dump`file, 1], System`Dump`file]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418573299*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox["With",
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm[With]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418573848*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{
+    "ContextToFileName", "[", "\<\"DataPaclets`CountryData`\"\>", "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm[
+    ContextToFileName["DataPaclets`CountryData`"]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418574298*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"        ", "\[InvisibleSpace]", 
+   TagBox["ContextToFileName",
+    HoldForm]}],
+  SequenceForm[
+   Indent[8], 
+   HoldForm[ContextToFileName]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418574767*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"        ", "\[InvisibleSpace]", 
+   TagBox["\<\"DataPaclets`CountryData`\"\>",
+    HoldForm]}],
+  SequenceForm[
+   Indent[8], 
+   HoldForm["DataPaclets`CountryData`"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418575233*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox["\<\"DataPaclets/CountryData.m\"\>",
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm["DataPaclets/CountryData.m"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418575685*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringTake", "[", 
+        RowBox[{"\<\"DataPaclets/CountryData.m\"\>", ",", "1"}], "]"}], "===",
+        "$PathnameSeparator"}], ",", 
+      RowBox[{"StringDrop", "[", 
+       RowBox[{"\<\"DataPaclets/CountryData.m\"\>", ",", "1"}], "]"}], 
+      ",", "\<\"DataPaclets/CountryData.m\"\>"}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[
+    If[StringTake["DataPaclets/CountryData.m", 1] === $PathnameSeparator, 
+     StringDrop["DataPaclets/CountryData.m", 1], 
+     "DataPaclets/CountryData.m"]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418576243*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox["If",
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm[If]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418576812*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{
+     RowBox[{"StringTake", "[", 
+      RowBox[{"\<\"DataPaclets/CountryData.m\"\>", ",", "1"}], "]"}], "===", 
+     "$PathnameSeparator"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm[
+   StringTake["DataPaclets/CountryData.m", 1] === $PathnameSeparator]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418577293*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"        ", "\[InvisibleSpace]", 
+   TagBox["SameQ",
+    HoldForm]}],
+  SequenceForm[
+   Indent[8], 
+   HoldForm[SameQ]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418577777*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"        ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"StringTake", "[", 
+     RowBox[{"\<\"DataPaclets/CountryData.m\"\>", ",", "1"}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[8], 
+   HoldForm[
+    StringTake["DataPaclets/CountryData.m", 1]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185783*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"         ", "\[InvisibleSpace]", 
+   TagBox["StringTake",
+    HoldForm]}],
+  SequenceForm[
+   Indent[9], 
+   HoldForm[StringTake]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418578784*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"         ", "\[InvisibleSpace]", 
+   TagBox["\<\"DataPaclets/CountryData.m\"\>",
+    HoldForm]}],
+  SequenceForm[
+   Indent[9], 
+   HoldForm["DataPaclets/CountryData.m"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418579204*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"         ", "\[InvisibleSpace]", 
+   TagBox["1",
+    HoldForm]}],
+  SequenceForm[
+   Indent[9], 
+   HoldForm[1]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418579609*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"        ", "\[InvisibleSpace]", 
+   TagBox["\<\"D\"\>",
+    HoldForm]}],
+  SequenceForm[
+   Indent[8], 
+   HoldForm["D"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.61832641857999*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"        ", "\[InvisibleSpace]", 
+   TagBox["$PathnameSeparator",
+    HoldForm]}],
+  SequenceForm[
+   Indent[8], 
+   HoldForm[$PathnameSeparator]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185803833`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"        ", "\[InvisibleSpace]", 
+   TagBox["\<\"/\"\>",
+    HoldForm]}],
+  SequenceForm[
+   Indent[8], 
+   HoldForm["/"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418580785*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"\<\"D\"\>", "===", "\<\"/\"\>"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm["D" === "/"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418581182*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox["False",
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm[False]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418581592*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"If", "[", 
+     RowBox[{"False", ",", 
+      RowBox[{"StringDrop", "[", 
+       RowBox[{"\<\"DataPaclets/CountryData.m\"\>", ",", "1"}], "]"}], 
+      ",", "\<\"DataPaclets/CountryData.m\"\>"}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[
+    If[False, 
+     StringDrop["DataPaclets/CountryData.m", 1], 
+     "DataPaclets/CountryData.m"]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418582033*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["\<\"DataPaclets/CountryData.m\"\>",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm["DataPaclets/CountryData.m"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185824966`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["\<\"x\"\>",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm["x"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418582909*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"\<\"/usr/local/Wolfram/Mathematica/10.0/SystemFiles/Kernel/\
+SystemResources/Linux-x86-64/\"\>", "<>", "\<\"DataPaclets/CountryData.m\"\>",
+      "<>", "\<\"x\"\>"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[
+    StringJoin[
+    "/usr/local/Wolfram/Mathematica/10.0/SystemFiles/Kernel/SystemResources/\
+Linux-x86-64/", "DataPaclets/CountryData.m", "x"]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185833187`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["\<\"/usr/local/Wolfram/Mathematica/10.0/SystemFiles/Kernel/\
+SystemResources/Linux-x86-64/DataPaclets/CountryData.mx\"\>",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[
+   "/usr/local/Wolfram/Mathematica/10.0/SystemFiles/Kernel/SystemResources/\
+Linux-x86-64/DataPaclets/CountryData.mx"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418583807*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{
+    "System`Dump`binary$2886", 
+     "=", "\<\"/usr/local/Wolfram/Mathematica/10.0/SystemFiles/Kernel/\
+SystemResources/Linux-x86-64/DataPaclets/CountryData.mx\"\>"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[
+   System`Dump`binary$2886 = 
+    "/usr/local/Wolfram/Mathematica/10.0/SystemFiles/Kernel/SystemResources/\
+Linux-x86-64/DataPaclets/CountryData.mx"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418584301*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox["\<\"/usr/local/Wolfram/Mathematica/10.0/SystemFiles/Kernel/\
+SystemResources/Linux-x86-64/DataPaclets/CountryData.mx\"\>",
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[
+   "/usr/local/Wolfram/Mathematica/10.0/SystemFiles/Kernel/SystemResources/\
+Linux-x86-64/DataPaclets/CountryData.mx"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185848103`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"If", "[", 
+     RowBox[{"System`Private`$PrintLoad", ",", 
+      RowBox[{
+       RowBox[{"Print", "[", 
+        RowBox[{"Hold", "[", "CountryData", "]"}], "]"}], ";", 
+       RowBox[{"Print", "[", 
+        RowBox[{"\<\"Loading \"\>", ",", "System`Dump`binary$2886"}], 
+        "]"}]}]}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[
+    If[System`Private`$PrintLoad, Print[
+       Hold[CountryData]]; Print["Loading ", System`Dump`binary$2886]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185854*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["If",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[If]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.61832641858595*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["System`Private`$PrintLoad",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[System`Private`$PrintLoad]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418586347*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"System`Dump`synt$2886", "=", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Head", "[", 
+         StyleBox[
+          RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}], "=!=", 
+        "$Off"}], ",", 
+       RowBox[{
+        RowBox[{"Off", "[", 
+         StyleBox[
+          RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}], ";", 
+        "True"}], ",", "False"}], "]"}]}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[System`Dump`synt$2886 = If[Head[
+        MessageName[Syntax, "bktwrn"]] =!= $Off, Off[
+        MessageName[Syntax, "bktwrn"]]; True, False]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418586876*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["Set",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[Set]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.61832641858735*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Head", "[", 
+        StyleBox[
+         RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}], "=!=", 
+       "$Off"}], ",", 
+      RowBox[{
+       RowBox[{"Off", "[", 
+        StyleBox[
+         RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}], ";", 
+       "True"}], ",", "False"}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[
+    If[Head[
+       MessageName[Syntax, "bktwrn"]] =!= $Off, Off[
+       MessageName[Syntax, "bktwrn"]]; True, False]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418587907*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["If",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[If]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418588395*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{
+     RowBox[{"Head", "[", 
+      StyleBox[
+       RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}], "=!=", 
+     "$Off"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[Head[
+      MessageName[Syntax, "bktwrn"]] =!= $Off]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418588912*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox["UnsameQ",
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm[UnsameQ]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185894136`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"Head", "[", 
+     StyleBox[
+      RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm[
+    Head[
+     MessageName[Syntax, "bktwrn"]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418589912*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"        ", "\[InvisibleSpace]", 
+   TagBox["Head",
+    HoldForm]}],
+  SequenceForm[
+   Indent[8], 
+   HoldForm[Head]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185903263`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"        ", "\[InvisibleSpace]", 
+   TagBox[
+    StyleBox[
+     RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"],
+    HoldForm]}],
+  SequenceForm[
+   Indent[8], 
+   HoldForm[
+    MessageName[Syntax, "bktwrn"]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418590736*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox["MessageName",
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm[MessageName]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185911417`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox["$Off",
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm[$Off]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418591538*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"MessageName", "=!=", "$Off"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[MessageName =!= $Off]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185919943`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["True",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[True]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185924253`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"If", "[", 
+     RowBox[{"True", ",", 
+      RowBox[{
+       RowBox[{"Off", "[", 
+        StyleBox[
+         RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}], ";", 
+       "True"}], ",", "False"}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[
+    If[True, Off[
+       MessageName[Syntax, "bktwrn"]]; True, False]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418592918*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{
+     RowBox[{"Off", "[", 
+      StyleBox[
+       RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}], ";", 
+     "True"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[Off[
+      MessageName[Syntax, "bktwrn"]]; True]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185934*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["CompoundExpression",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[CompoundExpression]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185938673`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"Off", "[", 
+     StyleBox[
+      RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[
+    Off[
+     MessageName[Syntax, "bktwrn"]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.61832641859433*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox["Off",
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm[Off]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185947533`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox[
+    StyleBox[
+     RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"],
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm[
+    MessageName[Syntax, "bktwrn"]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185952473`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["Null",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[Null]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418595725*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["True",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[True]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418596211*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["True",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[True]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418596683*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"System`Dump`synt$2886", "=", "True"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[System`Dump`synt$2886 = True]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418597125*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox["True",
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[True]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418597541*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"System`Dump`protected$2886", "=", 
+     RowBox[{"Unprotect", "[", "CountryData", "]"}]}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[System`Dump`protected$2886 = Unprotect[CountryData]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418598065*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["Set",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[Set]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418598494*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"Unprotect", "[", "CountryData", "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[
+    Unprotect[CountryData]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185989113`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["Unprotect",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[Unprotect]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264185993433`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"{", "\<\"CountryData\"\>", "}"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[{"CountryData"}]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418599847*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"System`Dump`protected$2886", "=", 
+     RowBox[{"{", "\<\"CountryData\"\>", "}"}]}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[System`Dump`protected$2886 = {"CountryData"}]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418600337*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"{", "\<\"CountryData\"\>", "}"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[{"CountryData"}]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418600864*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"ReleaseHold", "[", 
+     RowBox[{"Unset", "/@", 
+      RowBox[{"Hold", "[", "CountryData", "]"}]}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[
+    ReleaseHold[
+     Map[Unset, 
+      Hold[CountryData]]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264186014147`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["ReleaseHold",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[ReleaseHold]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418601944*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"Unset", "/@", 
+     RowBox[{"Hold", "[", "CountryData", "]"}]}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[
+    Map[Unset, 
+     Hold[CountryData]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.61832641860244*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["Map",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[Map]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418602932*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["Unset",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[Unset]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264186033897`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"Hold", "[", "CountryData", "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[
+    Hold[CountryData]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418603881*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox["Hold",
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm[Hold]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418604372*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"Hold", "[", 
+     RowBox[{"CountryData", "=."}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[
+    Hold[
+     Unset[CountryData]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418604851*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["Hold",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[Hold]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418605363*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"ReleaseHold", "[", 
+     RowBox[{"Hold", "[", 
+      RowBox[{"CountryData", "=."}], "]"}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[
+    ReleaseHold[
+     Hold[
+      Unset[CountryData]]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264186058607`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"CountryData", "=."}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[
+    Unset[CountryData]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.61832641860638*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["Unset",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[Unset]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418606842*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox["Null",
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[Null]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418607321*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"Protect", "[", 
+     RowBox[{"Evaluate", "[", "System`Dump`protected$2886", "]"}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[
+    Protect[
+     Evaluate[System`Dump`protected$2886]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264186078176`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["Protect",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[Protect]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418608322*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["System`Dump`protected$2886",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[System`Dump`protected$2886]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264186088133`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"{", "\<\"CountryData\"\>", "}"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[{"CountryData"}]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.61832641860931*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"Protect", "[", 
+     RowBox[{"{", "\<\"CountryData\"\>", "}"}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[
+    Protect[{"CountryData"}]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418609832*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"{", "\<\"CountryData\"\>", "}"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[{"CountryData"}]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264186103277`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"System`Private`$AutoLoad", "===", "False"}], ",", 
+      RowBox[{"Message", "[", 
+       RowBox[{
+        StyleBox[
+         RowBox[{"General", "::", "autoload"}], "MessageName"], ",", 
+        "CountryData", ",", "\<\"DataPaclets`CountryData`\"\>"}], "]"}], ",", 
+      
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"DumpGet", "[", "System`Dump`binary$2886", "]"}], "=!=", 
+         "Null"}], ",", 
+        RowBox[{"Message", "[", 
+         RowBox[{
+          StyleBox[
+           RowBox[{"General", "::", "sysfile"}], "MessageName"], 
+          ",", "\<\"DataPaclets`CountryData`\"\>", ",", "CountryData"}], 
+         "]"}]}], "]"}]}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[
+    If[System`Private`$AutoLoad === False, 
+     Message[
+      MessageName[General, "autoload"], CountryData, 
+      "DataPaclets`CountryData`"], 
+     If[DumpGet[System`Dump`binary$2886] =!= Null, 
+      Message[
+       MessageName[General, "sysfile"], "DataPaclets`CountryData`", 
+       CountryData]]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418610999*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["If",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[If]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418611624*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"System`Private`$AutoLoad", "===", "False"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[System`Private`$AutoLoad === False]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418612104*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["SameQ",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[SameQ]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418612609*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["System`Private`$AutoLoad",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[System`Private`$AutoLoad]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264186131*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["False",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[False]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418613594*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["False",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[False]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418614064*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"If", "[", 
+     RowBox[{"False", ",", 
+      RowBox[{"Message", "[", 
+       RowBox[{
+        StyleBox[
+         RowBox[{"General", "::", "autoload"}], "MessageName"], ",", 
+        "CountryData", ",", "\<\"DataPaclets`CountryData`\"\>"}], "]"}], ",", 
+      
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"DumpGet", "[", "System`Dump`binary$2886", "]"}], "=!=", 
+         "Null"}], ",", 
+        RowBox[{"Message", "[", 
+         RowBox[{
+          StyleBox[
+           RowBox[{"General", "::", "sysfile"}], "MessageName"], 
+          ",", "\<\"DataPaclets`CountryData`\"\>", ",", "CountryData"}], 
+         "]"}]}], "]"}]}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[
+    If[False, 
+     Message[
+      MessageName[General, "autoload"], CountryData, 
+      "DataPaclets`CountryData`"], 
+     If[DumpGet[System`Dump`binary$2886] =!= Null, 
+      Message[
+       MessageName[General, "sysfile"], "DataPaclets`CountryData`", 
+       CountryData]]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264186147137`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"DumpGet", "[", "System`Dump`binary$2886", "]"}], "=!=", 
+       "Null"}], ",", 
+      RowBox[{"Message", "[", 
+       RowBox[{
+        StyleBox[
+         RowBox[{"General", "::", "sysfile"}], "MessageName"], 
+        ",", "\<\"DataPaclets`CountryData`\"\>", ",", "CountryData"}], 
+       "]"}]}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[
+    If[DumpGet[System`Dump`binary$2886] =!= Null, 
+     Message[
+      MessageName[General, "sysfile"], "DataPaclets`CountryData`", 
+      CountryData]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264186154213`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["If",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[If]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418615996*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{
+     RowBox[{"DumpGet", "[", "System`Dump`binary$2886", "]"}], "=!=", "Null"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[DumpGet[System`Dump`binary$2886] =!= Null]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418616516*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["UnsameQ",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[UnsameQ]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418617031*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"DumpGet", "[", "System`Dump`binary$2886", "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[
+    DumpGet[System`Dump`binary$2886]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418617517*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox["DumpGet",
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm[DumpGet]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264186180267`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox["System`Dump`binary$2886",
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm[System`Dump`binary$2886]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418618498*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"       ", "\[InvisibleSpace]", 
+   TagBox["\<\"/usr/local/Wolfram/Mathematica/10.0/SystemFiles/Kernel/\
+SystemResources/Linux-x86-64/DataPaclets/CountryData.mx\"\>",
+    HoldForm]}],
+  SequenceForm[
+   Indent[7], 
+   HoldForm[
+   "/usr/local/Wolfram/Mathematica/10.0/SystemFiles/Kernel/SystemResources/\
+Linux-x86-64/DataPaclets/CountryData.mx"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418618991*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{
+    "DumpGet", 
+     "[", "\<\"/usr/local/Wolfram/Mathematica/10.0/SystemFiles/Kernel/\
+SystemResources/Linux-x86-64/DataPaclets/CountryData.mx\"\>", "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[
+    DumpGet[
+    "/usr/local/Wolfram/Mathematica/10.0/SystemFiles/Kernel/SystemResources/\
+Linux-x86-64/DataPaclets/CountryData.mx"]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418619563*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["Null",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[Null]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418620142*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"      ", "\[InvisibleSpace]", 
+   TagBox["Null",
+    HoldForm]}],
+  SequenceForm[
+   Indent[6], 
+   HoldForm[Null]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418620633*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"Null", "=!=", "Null"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[Null =!= Null]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418621132*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["False",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[False]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418621632*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"If", "[", 
+     RowBox[{"False", ",", 
+      RowBox[{"Message", "[", 
+       RowBox[{
+        StyleBox[
+         RowBox[{"General", "::", "sysfile"}], "MessageName"], 
+        ",", "\<\"DataPaclets`CountryData`\"\>", ",", "CountryData"}], 
+       "]"}]}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[
+    If[False, 
+     Message[
+      MessageName[General, "sysfile"], "DataPaclets`CountryData`", 
+      CountryData]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418622177*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox["Null",
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[Null]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418622736*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"If", "[", 
+     RowBox[{"System`Dump`synt$2886", ",", 
+      RowBox[{"On", "[", 
+       StyleBox[
+        RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}]}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[
+    If[System`Dump`synt$2886, 
+     On[
+      MessageName[Syntax, "bktwrn"]]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418623266*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["If",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[If]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418623794*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["System`Dump`synt$2886",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[System`Dump`synt$2886]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418624269*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["True",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[True]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6183264186247673`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"If", "[", 
+     RowBox[{"True", ",", 
+      RowBox[{"On", "[", 
+       StyleBox[
+        RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}]}], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[
+    If[True, 
+     On[
+      MessageName[Syntax, "bktwrn"]]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418625319*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{"On", "[", 
+     StyleBox[
+      RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"], "]"}],
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[
+    On[
+     MessageName[Syntax, "bktwrn"]]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.61832641862599*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox["On",
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[On]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418626512*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"     ", "\[InvisibleSpace]", 
+   TagBox[
+    StyleBox[
+     RowBox[{"Syntax", "::", "bktwrn"}], "MessageName"],
+    HoldForm]}],
+  SequenceForm[
+   Indent[5], 
+   HoldForm[
+    MessageName[Syntax, "bktwrn"]]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.61832641862702*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox["Null",
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[Null]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418627531*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"    ", "\[InvisibleSpace]", 
+   TagBox["CountryData",
+    HoldForm]}],
+  SequenceForm[
+   Indent[4], 
+   HoldForm[CountryData]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418628015*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"   ", "\[InvisibleSpace]", 
+   TagBox["CountryData",
+    HoldForm]}],
+  SequenceForm[
+   Indent[3], 
+   HoldForm[CountryData]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418628544*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"  ", "\[InvisibleSpace]", 
+   TagBox["CountryData",
+    HoldForm]}],
+  SequenceForm[
+   Indent[2], 
+   HoldForm[CountryData]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418629053*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{" ", "\[InvisibleSpace]", 
+   TagBox["CountryData",
+    HoldForm]}],
+  SequenceForm[
+   Indent[1], 
+   HoldForm[CountryData]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.618326418629546*^9}]
+}, Open  ]],
+
+Cell[BoxData["CountryData"], "Output",
+ CellChangeTimes->{3.618326418630289*^9}]
+}, Open  ]]
+},
+WindowSize->{936, 989},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (June 27, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 333, 8, 59, "Input"],
+Cell[CellGroupData[{
+Cell[938, 34, 539, 17, 24, "Print"],
+Cell[1480, 53, 263, 9, 24, "Print"],
+Cell[1746, 64, 289, 11, 24, "Print"],
+Cell[2038, 77, 230, 9, 24, "Print"],
+Cell[2271, 88, 287, 11, 24, "Print"],
+Cell[2561, 101, 230, 9, 24, "Print"],
+Cell[2794, 112, 279, 9, 24, "Print"],
+Cell[3076, 123, 4044, 99, 305, "Print"],
+Cell[7123, 224, 247, 9, 24, "Print"],
+Cell[7373, 235, 3904, 98, 285, "Print"],
+Cell[11280, 335, 236, 9, 24, "Print"],
+Cell[11519, 346, 3531, 90, 285, "Print"],
+Cell[15053, 438, 261, 9, 24, "Print"],
+Cell[15317, 449, 572, 16, 45, "Print"],
+Cell[15892, 467, 230, 9, 24, "Print"],
+Cell[16125, 478, 496, 15, 24, "Print"],
+Cell[16624, 495, 245, 9, 24, "Print"],
+Cell[16872, 506, 283, 9, 24, "Print"],
+Cell[17158, 517, 411, 12, 24, "Print"],
+Cell[17572, 531, 364, 12, 24, "Print"],
+Cell[17939, 545, 264, 9, 24, "Print"],
+Cell[18206, 556, 284, 9, 24, "Print"],
+Cell[18493, 567, 985, 28, 65, "Print"],
+Cell[19481, 597, 234, 9, 24, "Print"],
+Cell[19718, 608, 359, 12, 24, "Print"],
+Cell[20080, 622, 261, 9, 24, "Print"],
+Cell[20344, 633, 285, 9, 24, "Print"],
+Cell[20632, 644, 286, 9, 24, "Print"],
+Cell[20921, 655, 749, 21, 45, "Print"],
+Cell[21673, 678, 230, 9, 24, "Print"],
+Cell[21906, 689, 445, 14, 24, "Print"],
+Cell[22354, 705, 237, 9, 24, "Print"],
+Cell[22594, 716, 370, 12, 24, "Print"],
+Cell[22967, 730, 248, 9, 24, "Print"],
+Cell[23218, 741, 288, 9, 24, "Print"],
+Cell[23509, 752, 230, 9, 24, "Print"],
+Cell[23742, 763, 238, 9, 24, "Print"],
+Cell[23983, 774, 265, 9, 24, "Print"],
+Cell[24251, 785, 239, 9, 24, "Print"],
+Cell[24493, 796, 281, 10, 24, "Print"],
+Cell[24777, 808, 236, 9, 24, "Print"],
+Cell[25016, 819, 536, 17, 24, "Print"],
+Cell[25555, 838, 287, 9, 24, "Print"],
+Cell[25845, 849, 237, 9, 24, "Print"],
+Cell[26085, 860, 547, 15, 45, "Print"],
+Cell[26635, 877, 462, 12, 45, "Print"],
+Cell[27100, 891, 550, 16, 65, "Print"],
+Cell[27653, 909, 463, 12, 45, "Print"],
+Cell[28119, 923, 638, 19, 45, "Print"],
+Cell[28760, 944, 227, 9, 24, "Print"],
+Cell[28990, 955, 274, 9, 24, "Print"],
+Cell[29267, 966, 790, 24, 45, "Print"],
+Cell[30060, 992, 229, 9, 24, "Print"],
+Cell[30292, 1003, 713, 24, 24, "Print"],
+Cell[31008, 1029, 229, 9, 24, "Print"],
+Cell[31240, 1040, 418, 15, 24, "Print"],
+Cell[31661, 1057, 242, 9, 24, "Print"],
+Cell[31906, 1068, 375, 14, 24, "Print"],
+Cell[32284, 1084, 237, 9, 24, "Print"],
+Cell[32524, 1095, 329, 12, 24, "Print"],
+Cell[32856, 1109, 250, 9, 24, "Print"],
+Cell[33109, 1120, 234, 9, 24, "Print"],
+Cell[33346, 1131, 288, 10, 24, "Print"],
+Cell[33637, 1143, 235, 9, 24, "Print"],
+Cell[33875, 1154, 517, 18, 24, "Print"],
+Cell[34395, 1174, 408, 15, 24, "Print"],
+Cell[34806, 1191, 263, 9, 24, "Print"],
+Cell[35072, 1202, 371, 14, 24, "Print"],
+Cell[35446, 1218, 234, 9, 24, "Print"],
+Cell[35683, 1229, 330, 12, 24, "Print"],
+Cell[36016, 1243, 233, 9, 24, "Print"],
+Cell[36252, 1254, 233, 9, 24, "Print"],
+Cell[36488, 1265, 232, 9, 24, "Print"],
+Cell[36723, 1276, 300, 10, 24, "Print"],
+Cell[37026, 1288, 231, 9, 24, "Print"],
+Cell[37260, 1299, 374, 11, 24, "Print"],
+Cell[37637, 1312, 230, 9, 24, "Print"],
+Cell[37870, 1323, 302, 11, 24, "Print"],
+Cell[38175, 1336, 245, 9, 24, "Print"],
+Cell[38423, 1347, 283, 10, 24, "Print"],
+Cell[38709, 1359, 362, 11, 24, "Print"],
+Cell[39074, 1372, 282, 10, 24, "Print"],
+Cell[39359, 1384, 402, 15, 24, "Print"],
+Cell[39764, 1401, 246, 9, 24, "Print"],
+Cell[40013, 1412, 338, 13, 24, "Print"],
+Cell[40354, 1427, 231, 9, 24, "Print"],
+Cell[40588, 1438, 237, 9, 24, "Print"],
+Cell[40828, 1449, 291, 11, 24, "Print"],
+Cell[41122, 1462, 234, 9, 24, "Print"],
+Cell[41359, 1473, 325, 13, 24, "Print"],
+Cell[41687, 1488, 233, 9, 24, "Print"],
+Cell[41923, 1499, 388, 15, 24, "Print"],
+Cell[42314, 1516, 277, 11, 24, "Print"],
+Cell[42594, 1529, 234, 9, 24, "Print"],
+Cell[42831, 1540, 231, 9, 24, "Print"],
+Cell[43065, 1551, 381, 13, 24, "Print"],
+Cell[43449, 1566, 238, 9, 24, "Print"],
+Cell[43690, 1577, 278, 9, 24, "Print"],
+Cell[43971, 1588, 282, 10, 24, "Print"],
+Cell[44256, 1600, 333, 12, 24, "Print"],
+Cell[44592, 1614, 284, 10, 24, "Print"],
+Cell[44879, 1626, 1255, 37, 85, "Print"],
+Cell[46137, 1665, 228, 9, 24, "Print"],
+Cell[46368, 1676, 313, 10, 24, "Print"],
+Cell[46684, 1688, 235, 9, 24, "Print"],
+Cell[46922, 1699, 271, 9, 24, "Print"],
+Cell[47196, 1710, 235, 9, 24, "Print"],
+Cell[47434, 1721, 234, 9, 24, "Print"],
+Cell[47671, 1732, 1176, 36, 65, "Print"],
+Cell[48850, 1770, 748, 24, 45, "Print"],
+Cell[49601, 1796, 228, 9, 24, "Print"],
+Cell[49832, 1807, 355, 11, 24, "Print"],
+Cell[50190, 1820, 239, 9, 24, "Print"],
+Cell[50432, 1831, 321, 11, 24, "Print"],
+Cell[50756, 1844, 242, 9, 24, "Print"],
+Cell[51001, 1855, 272, 9, 24, "Print"],
+Cell[51276, 1866, 464, 12, 45, "Print"],
+Cell[51743, 1880, 525, 16, 65, "Print"],
+Cell[52271, 1898, 233, 9, 24, "Print"],
+Cell[52507, 1909, 233, 9, 24, "Print"],
+Cell[52743, 1920, 271, 10, 24, "Print"],
+Cell[53017, 1932, 234, 9, 24, "Print"],
+Cell[53254, 1943, 613, 21, 24, "Print"],
+Cell[53870, 1966, 231, 9, 24, "Print"],
+Cell[54104, 1977, 485, 17, 24, "Print"],
+Cell[54592, 1996, 228, 9, 24, "Print"],
+Cell[54823, 2007, 266, 9, 24, "Print"],
+Cell[55092, 2018, 234, 9, 24, "Print"],
+Cell[55329, 2029, 451, 17, 24, "Print"],
+Cell[55783, 2048, 367, 14, 24, "Print"],
+Cell[56153, 2064, 228, 9, 24, "Print"],
+Cell[56384, 2075, 325, 12, 24, "Print"],
+Cell[56712, 2089, 231, 9, 24, "Print"],
+Cell[56946, 2100, 245, 9, 24, "Print"],
+Cell[57194, 2111, 244, 9, 24, "Print"],
+Cell[57441, 2122, 243, 9, 24, "Print"],
+Cell[57687, 2133, 242, 9, 24, "Print"]
+}, Open  ]],
+Cell[57944, 2145, 80, 1, 32, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
