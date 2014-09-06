@@ -261,23 +261,23 @@ cindices={{8,4,2,6},{8,6,5,7},{8,7,3,4},{4,3,1,2},{1,3,7,5},{2,1,5,6}};
 
 
 
-
+(** ** ** 3 ** ** **)
 cubelet[orig_,cols_List]:=GraphicsComplex[#+orig&/@ucoords,MapThread[{FaceForm[#1],Polygon[#2]}&,{cols,cindices}]];
 
 
-
+(** ** ** 4 ** ** **)
 basic={b,f,l,r,d,u};
 
 
-
+(** ** ** 7 ** ** **)
 bcolors={Red,Orange,Blue,Green,Yellow,White};
 
 
-
+(** ** ** 8 ** ** **)
 MapThread[(#1/:col[#1]=#2)&,{basic,bcolors}];
 
 
-
+(** ** ** 9 ** ** **)
 stickers={
 (* back: {i,i,i,b,i,i} *)
 {{{i,i,i,b,d,l},{i,i,i,b,i,l},{u,i,i,b,i,l}},
@@ -294,154 +294,203 @@ stickers={
 }/.(#->col[#]&/@basic)/.i->Black;
 
 
-
+(** ** ** 10 ** ** **)
 origins=Outer[List,{-1,0,1},{-1,0,1},{-1,0,1}];
 
 
-
+(** ** ** 11 ** ** **)
 solved=MapThread[cubelet,{origins,stickers},3];
 
 
-
+(** ** ** 12 ** ** **)
 solved[[2,2,2]]={};
 
 
 
 
 (*Transforms*)
+(** ** ** 13 ** ** **)
 b/:perm[b]={{{1,1,1},{1,3,1},{1,3,3},{1,1,3}},
 {{1,2,1},{1,3,2},{1,2,3},{1,1,2}},{{1,2,2}}};
 
 
-
+(** ** ** 14 ** ** **)
 f/:perm[f]=Reverse/@perm[b]/.{1,y_,z_}:>{3,y,z};
 
 
-
+(** ** ** 15 ** ** **)
 l/:perm[l]={{{1,1,1},{1,1,3},{3,1,3},{3,1,1}},
 {{2,1,1},{1,1,2},{2,1,3},{3,1,2}},{{2,1,2}}};
 
 
-
+(** ** ** 16 ** ** **)
 r/:perm[r]=Reverse/@perm[l]/.{x_,1,z_}:>{x,3,z};
 
 
-
+(** ** ** 17 ** ** **)
 d/:perm[d]={{{1,1,1},{3,1,1},{3,3,1},{1,3,1}},
 {{2,1,1},{3,2,1},{2,3,1},{1,2,1}},{{2,2,1}}};
 
 
-
+(** ** ** 18 ** ** **)
 u/:perm[u]=Reverse/@perm[d]/.{x_,y_,1}:>{x,y,3};
 
 
-
+(** ** ** 19 ** ** **)
 n/:perm[n]={};
 
 
-
+(** ** ** 20 ** ** **)
 b/:ax[b]={1,0,0};
 
 
-
+(** ** ** 21 ** ** **)
 f/:ax[f]=-ax[b];
 
 
-
+(** ** ** 22 ** ** **)
 l/:ax[l]={0,1,0};
 
 
-
+(** ** ** 23 ** ** **)
 r/:ax[r]=-ax[l];
 
-
+(** ** ** 24 ** ** **)
 d/:ax[d]={0,0,1};
 
-
+(** ** ** 25 ** ** **)
 u/:ax[u]=-ax[d];
 
-
+(** ** ** 26 ** ** **)
 n/:ax[n]={1,0,0};
 
-
+(** ** ** 27 ** ** **)
 (#/:angle[#]=Pi/2)&/@{b,f,l,r,d,u};
 
+
+(** ** ** 28 ** ** **)
 n/:angle[n]=0;
 
 
+
+(** ** ** 29 ** ** **)
 rot[m_]:=RotationMatrix[angle[m],ax[m]];
 
 
 (*for animation, angle runs from 0 1 always*)
+(** ** ** 30 ** ** **)
 rot[m_,\[Alpha]_]:=RotationMatrix[\[Alpha]*angle[m],ax[m]];
 
 
+
+
 (*inverses and half turns*)
+(** ** ** 31 ** ** **)
 perm[inv[m_]]:=Reverse/@perm[m];
 
 
+
+(** ** ** 32 ** ** **)
 ax[inv[m_]]:=ax[m];
 
 
+
+(** ** ** 33 ** ** **)
 angle[inv[m_]]:=-angle[m];
 
 
+
+(** ** ** 34 ** ** **)
 sq[cycle_/;OddQ[Length[cycle]]]:=Join[Take[cycle,{1,-1,2}],Take[cycle,{2,-1,2}]];
 
 
+
+(** ** ** 35 ** ** **)
 sq[cycle_/;EvenQ[Length[cycle]]]:=Sequence@@{Take[cycle,{1,-1,2}],Take[cycle,{2,-1,2}]};
 
 
+
+(** ** ** 36 ** ** **)
 perm[half[m_]]:=sq/@perm[m];
 
 
+
+(** ** ** 38 ** ** **)
 ax[half[m_]]:=ax[m];
 
 
+
+(** ** ** 39 ** ** **)
 angle[half[m_]]:=2*angle[m];
 
 
+
+(** ** ** 40 ** ** **)
 inv[inv[m_]]:=m;
 
 
+
+(** ** ** 41 ** ** **)
 inv[half[m_]]:=half[m];
 
 
+
+(** ** ** 42 ** ** **)
 Format[inv[m_]]:=Overscript[m,"_"];
 
 
+
+(** ** ** 43 ** ** **)
 Format[half[m_]]:=Superscript[m,2];
 
 
 (*rotations*)
-apply[rot_,GraphicsComplex[points_,stuff__]]:=
+
+(** ** ** 44 ** ** **)
+apply[rot_,Graphic(** ** ** 41 ** ** **)sComplex[points_,stuff__]]:=
 GraphicsComplex[rot.#&/@points,stuff];
 
 
-
+(** ** ** 45 ** ** **)
 permute[clist_,tensor_]:=Fold[ReplacePart[#1,Thread[#2->Extract[#1,RotateRight[#2]]]]&,tensor,clist];
 
 
 
+(** ** ** 47 ** ** **)
 permute[clist_,rot_,tensor_]:=Fold[ReplacePart[#1,Thread[#2->(apply[rot,#]&/@Extract[#1,RotateRight[#2]])]]&,tensor,clist];
 
 
 
+
+(** ** ** 48 ** ** **)
 twist[move_,cube_]:=permute[perm[move],rot[move],cube];
 
 
 
 (*animation*)
+(** ** ** 49 ** ** **)
 turn[move_,\[Alpha]_,part_]:=apply[rot[move,\[Alpha]],#]&/@part;
 
 
 
+(** ** ** 50 ** ** **)
+With[{
 
-With[{allPositions=Round[Flatten[origins+2,2]]},
+(** ** ** 51 ** ** **)
+allPositions=Round[Flatten[origins+2,2]]
+},
+
+
+(** ** ** 52 ** ** **)
 twisting[m_,\[Alpha]_,cube_]:=
 Module[{mp},
 
+
+(** ** ** 53 ** ** **)
 mp=Flatten[perm[m],1];
+
+
+(** ** ** 54 ** ** **)
 Join[Extract[cube,Complement[allPositions,mp]],turn[m,\[Alpha],Extract[cube,mp]]]
 ]
 ];
@@ -450,6 +499,8 @@ Join[Extract[cube,Complement[allPositions,mp]],turn[m,\[Alpha],Extract[cube,mp]]
 
 
 (*keyboard modifiers*)
+
+(** ** ** 55 ** ** **)
 mod[m_]:=Which[
 CurrentValue["AltKey"]||CurrentValue["ControlKey"],
 half[m],
@@ -460,15 +511,17 @@ m]
 )
 
 
-
+(** ** ** 56 ** ** **)
 u/:ax[u]=-ax[d];
 
 
-
+(** ** ** 57 ** ** **)
 n/:ax[n]={1,0,0};
 
 
 
+
+(** ** ** 58 ** ** **)
 (#/:angle[#]=Pi/2)&/@{b,f,l,r,d,u};
 
 
