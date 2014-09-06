@@ -1,3 +1,4 @@
+<pre><code>
 Manipulate[
 (** ** DATA CONTROLLER  MAINLY SAMPLES THE VIEW OF THE MODEL DEFINED IN THE INITIALIZATION ** **)
 (*As all the demonstrations it is just another Manipulate, although which variables it changes and how is not clear.*)
@@ -642,4 +643,4 @@ CurrentValue["ShiftKey"],inv[m],
 True,m]
 )
 ]
-
+</code><pre>
